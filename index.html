@@ -1,19 +1,19 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title></title>
-  <link href="" media="screen" rel="stylesheet" type="text/css" />
-<style>
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Consent form</title>
 </head>
 <body>
-  <div>
-    <td-uc-form id="uc-form"
-      jsonUrl="https://api-consent-config.treasuredata.com/api/universal_consent/workspaces/3/forms/2/settings">
-    </td-uc-form>
-  </div>
-  <!-- For td-uc-form -->
-  <script src="https://td-jssdk.s3.amazonaws.com/tduc.js"></script>
-</body></html>
+    <form method="POST" action="/submit">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>
